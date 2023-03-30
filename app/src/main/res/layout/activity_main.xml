@@ -4,14 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#ECD50D"
+    android:backgroundTint="#FFEB3B"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/Hasil"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hasil : Putih"
-        android:textSize="24sp"
+        android:text="Hasil : "
+        android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -25,7 +27,8 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        android:text="Masukan 2 Jenis Warna yang akan di campurkan lalu lihat hasilnya"
+        android:text="Masukan 2 Jenis Warna yang akan di campurkan lalu lihat hasilnya. Warna Yang Tersedia : Merah, Kuning, Hijau, Biru, Ungu"
+        android:textColor="#040303"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -36,8 +39,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
-        android:text="Warna 1"
-        app:layout_constraintStart_toStartOf="parent"
+        android:text="Warna Pertama"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="@+id/textView"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <TextView
@@ -46,17 +50,18 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
-        android:text="Warna 2"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Warna Kedua"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/Input1"
-        android:layout_width="0dp"
+        android:layout_width="155dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toStartOf="@+id/progressBar"
+        app:boxBackgroundColor="#FFFFFF"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2">
 
@@ -64,26 +69,28 @@
             android:id="@+id/Warna1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="Contoh : Putih" />
+            android:hint="Contoh : Merah" />
 
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/input2"
-        android:layout_width="0dp"
+        android:layout_width="154dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
+        app:boxBackgroundColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/progressBar"
-        app:layout_constraintTop_toBottomOf="@+id/textView2">
+        app:layout_constraintStart_toEndOf="@+id/Input1"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/Warna2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Contoh : Merah" />
+            android:hint="Contoh : Kuning" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
@@ -91,19 +98,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
-        android:text="Button"
+        android:backgroundTint="#373535"
+        android:text="Combine"
+        android:textColor="#FFEB3B"
+        app:iconTint="#FFEB3B"
         app:layout_constraintEnd_toEndOf="@+id/input2"
         app:layout_constraintStart_toStartOf="@+id/Input1"
         app:layout_constraintTop_toBottomOf="@+id/Input1" />
 
-    <ProgressBar
-        android:id="@+id/progressBar"
-        style="?android:attr/progressBarStyle"
-        android:layout_width="52dp"
-        android:layout_height="56dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
