@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">CombineColor</string>
+    <string name="Merah">Hasil : Merah</string>
+    <string name="Oren">Hasil : Oren</string>
+    <string name="Hijau_muda">Hasil : Hijau Muda</string>
+    <string name="Hijau">Hasil : Hijau</string>
+    <string name="Krem">Hasil : Krem</string>
+    <string name="Abu">Hasil : Abu-abu</string>
+    <string name="Biru_tua">Hasil : Biru tua</string>
+    <string name="Coklat">Hasil : Coklat</string>
+    <string name="Ungu">Hasil : Ungu</string>
+    <string name="Pink">Hasil : Pink</string>
+    <string name="warnaEmpty1">Hasil : warna pada input pertama tidak tersedia</string>
+    <string name="warnaEmpty2">Hasil : warna pada input kedua tidak tersedia</string>
+    <string name="Empty">Tidak Tersedia </string>
+    <string name="Warna1_invalid">Warna1 tidak boleh kosong.</string>
+    <string name="Warna2_invalid">Warna2 tidak boleh kosong.</string>
+    <string name="inputNumber">Input harus menggunakan Character atau Huruf contoh : "Merah".</string>
+
+</resources>
